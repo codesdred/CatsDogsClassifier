@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CatsDogsClassifier</title>
+	<link rel="icon" href="{%static 'icons/icons8-cat.gif' %}">
+	<link rel="stylesheet" href="{%static 'home.css' %}">
+</head>
+
+<body>
+	<div class="container">
+		<div class="leftc">
+			<div class="imgcontainer">
+				<img class="imgcontained" src="{{image}}">
+			</div>
+			<div class="formcontainer">
+				<form method='post' enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="buttoncontainer">
+						<div class="buttoncontainers">
+							<label for="fileinput"  class="inputbutton">SELECT</label>
+							<input type="file" name="imginput" id="fileinput">
+						</div>
+
+						<div class="buttoncontainers">
+							<label for="filesubmit"  class="submitbutton">SUBMIT</label>
+							<input type="submit" id="filesubmit">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="rightc">
+			<div class="dog">
+				<div>DOG :</div>
+				<div class="dogdiv"></div>
+				<div class="dogdiv"></div>
+				<div class="dogdiv"></div>
+				<div class="dogdiv"></div>
+				<div class="dogdiv"></div>
+				<div class="dogdiv"></div>
+				<div class="dogdiv"></div>
+				<div class="dogdiv"></div>
+				<div class="dogdiv"></div>
+				<div class="dogdiv"></div>
+				<div>{{dog}}%</div>
+			</div>
+
+			<div class="cat">			
+				<div>CAT  :</div>
+				<div class="catdiv"></div>
+				<div class="catdiv"></div>
+				<div class="catdiv"></div>
+				<div class="catdiv"></div>
+				<div class="catdiv"></div>
+				<div class="catdiv"></div>
+				<div class="catdiv"></div>
+				<div class="catdiv"></div>
+				<div class="catdiv"></div>
+				<div class="catdiv"></div>	
+				<div>{{cat}}%</div>		
+			</div>
+		</div>
+	</div>
+
+	<script src="{% static 'home.js' %}"></script>
+	<script>
+		dog({{dog}})
+		cat({{cat}})
+	</script>
+</body>
+</html>

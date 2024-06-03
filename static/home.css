@@ -1,0 +1,107 @@
+body{
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+.container{
+    height: 97vh;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftc,.rightc{
+    height: 800px;
+    width: 600px;
+}
+
+.leftc{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgcontainer{
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.imgcontained{
+    height: 500px;
+    width: 500px;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+input[type="submit"]{
+    display: none;
+}
+
+.formcontainer{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttoncontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    height: 60px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttoncontainers{
+    display: flex;
+    height: 90px;
+    width: 130px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid whitesmoke;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+.buttoncontainers:hover{
+    background-color: rgba(255, 255, 255, 0.707)
+}
+
+.rightc{
+    width: 1050px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: start;
+}
+
+.dog{
+    font-size: 71px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cat{
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dogdiv,.catdiv{
+    height: 100px;
+    width: 50px;
+    background-color: white;
+}
+
